@@ -118,14 +118,14 @@ try {
         echo '
             <script>
                 alert("Erro ao tentar enviar o e-mail. \n\nPor favor tente novamente mais tarde.");
-    //			window.history.back(-1);
+    			window.history.back(-1);
             </script>
         ';
     } else {
         echo '
             <script>
                 alert("Sua mensagem foi enviada com sucesso!");
-                window.location.href="http://www.bateriasjacana.com.br/contato.htm";
+                window.location.href="http://www.bateriasjacana.com.br/";
             </script>
         ';
     }
@@ -133,7 +133,7 @@ try {
     echo '
             <script>
                 alert("Erro ao tentar enviar o e-mail. \n\nPor favor tente novamente mais tarde. Mailer Error: '.$mail->ErrorInfo.'");
-//                window.history.back(-1);
+                window.history.back(-1);
             </script>
         ';
 }
